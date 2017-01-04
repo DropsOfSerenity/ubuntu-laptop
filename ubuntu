@@ -24,7 +24,6 @@ append_to_zshrc 'export PATH="$HOME/.bin:$PATH"'
 # add all ppa's first
 sudo add-apt-repository -y "deb https://cli-assets.heroku.com/branches/stable/apt ./"
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-sudo add-apt-repository -y ppa:cpick/hub
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 # basics
@@ -35,7 +34,8 @@ chsh -s "$(which zsh)"
 sudo apt-get install heroku
 
 # github
-sudo apt-get install hub
+# TODO: add hub compilation and copy to ~/.bin
+# sudo apt-get install hub
 
 # image manip
 sudo apt-get install imagemagick --fix-missing
