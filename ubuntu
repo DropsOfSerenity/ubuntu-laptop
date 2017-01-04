@@ -27,21 +27,21 @@ curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 # basics
-sudo apt-get install ctags git openssl tmux vim zsh wget
+sudo apt-get install -y ctags git openssl tmux vim zsh wget
 chsh -s "$(which zsh)"
 
 # heroku
-sudo apt-get install heroku
+sudo apt-get install -y heroku
 
 # github
 # TODO: add hub compilation and copy to ~/.bin
 # sudo apt-get install hub
 
 # image manip
-sudo apt-get install imagemagick --fix-missing
+sudo apt-get install -y imagemagick --fix-missing
 
 # capybara-webkit dependencies
-sudo apt-get install qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
+sudo apt-get install -y qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base gstreamer1.0-tools gstreamer1.0-x
 
 # language related
 [ ! -e "$HOME/.rbenv" ] && git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -49,8 +49,8 @@ cd ~/.rbenv && src/configure && make -C src
 sudo apt-get install -y nodejs
 
 # databases
-sudo apt-get install redis-server
-sudo apt-get install postgresql postgresql-contrib
+sudo apt-get install -y redis-server
+sudo apt-get install -y postgresql postgresql-contrib
 
 find_latest_ruby() {
   rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'
