@@ -24,8 +24,7 @@ Download, review, then execute the script:
 
 ```sh
 curl --remote-name https://raw.githubusercontent.com/dropsofserenity/ubuntu-laptop/master/ubuntu
-less mac
-sh mac 2>&1 | tee ~/laptop.log
+sh ubuntu 2>&1 | tee ~/laptop.log
 ```
 Debugging
 ---------
@@ -33,7 +32,7 @@ Debugging
 Your last Laptop run will be saved to `~/laptop.log`.
 Read through it to see if you can debug the issue yourself.
 If not, copy the lines where the script failed into a
-[new GitHub Issue](https://github.com/thoughtbot/laptop/issues/new) for us.
+[new GitHub Issue](https://github.com/dropsofserenity/ubuntu-laptop/issues/new) for us.
 Or, attach the whole log file as an attachment.
 
 What it sets up
@@ -109,7 +108,7 @@ It should take less than 15 minutes to install (depends on your machine).
 License
 -------
 
-Laptop is © 2011-2017 thoughtbot, inc.
+Laptop is © 2011-2017 DropsOfSerenity
 It is free software,
 and may be redistributed under the terms specified in the [LICENSE] file.
 
