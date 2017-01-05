@@ -23,11 +23,12 @@ append_to_zshrc 'export PATH="$HOME/.bin:$PATH"'
 
 # add all ppa's first
 sudo add-apt-repository -y "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+sudo add-apt-repository -y ppa:martin-frost/thoughtbot-rcm
 curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 # basics
-sudo apt-get install -y ctags git openssl tmux vim zsh wget
+sudo apt-get install -y ctags git openssl tmux vim zsh wget silversearcher-ag rcm
 chsh -s "$(which zsh)"
 
 # heroku

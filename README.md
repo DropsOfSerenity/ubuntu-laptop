@@ -12,8 +12,8 @@ Requirements
 
 We support:
 
-* Ubuntu 16.04
-* Ubuntu 16.10
+* Ubuntu 16.04 (64 bit)
+* Ubuntu 16.10 (64 bit)
 
 Other versions may work but are not tested, pull requests/bug reports welcome.
 
@@ -24,7 +24,7 @@ Download, review, then execute the script:
 
 ```sh
 curl --remote-name https://raw.githubusercontent.com/dropsofserenity/ubuntu-laptop/master/ubuntu
-sh ubuntu 2>&1 | tee ~/laptop.log
+sh mac 2>&1 | tee ~/laptop.log
 ```
 Debugging
 ---------
