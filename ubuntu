@@ -28,7 +28,7 @@ curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
 # basics
-sudo apt-get install -y ctags git openssl tmux vim zsh wget silversearcher-ag rcm
+sudo apt-get install -y ctags git libssl-dev libreadline-dev openssl tmux vim zsh wget silversearcher-ag rcm
 chsh -s "$(which zsh)"
 
 # heroku
@@ -46,6 +46,7 @@ sudo apt-get install -y qt5-default libqt5webkit5-dev gstreamer1.0-plugins-base 
 
 # language related
 [ ! -e "$HOME/.rbenv" ] && git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+[ ! -e "$HOME/.rbenv/plugins/ruby-build" ] && git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 cd ~/.rbenv && src/configure && make -C src
 sudo apt-get install -y nodejs
 

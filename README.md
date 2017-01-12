@@ -24,7 +24,7 @@ Download, review, then execute the script:
 
 ```sh
 curl --remote-name https://raw.githubusercontent.com/dropsofserenity/ubuntu-laptop/master/ubuntu
-sh mac 2>&1 | tee ~/laptop.log
+sh ubuntu 2>&1 | tee ~/laptop.log
 ```
 Debugging
 ---------
